@@ -3,7 +3,7 @@ package com.codewithashith;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class AdvancedSpellChecker implements SpellChecker {
 
     public void checkSpelling(String emailMessage) {

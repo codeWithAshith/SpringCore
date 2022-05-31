@@ -2,7 +2,7 @@ package com.codewithashith;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class BasicSpellChecker implements SpellChecker {
     public void checkSpelling(String emailMessage) {
         if (emailMessage != null) {
