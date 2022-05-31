@@ -16,6 +16,8 @@ public class AppConfig {
 
     @Bean(name = "emailClient")
     public EmailClient createEmailClient(){
-        return new EmailClient(createAdvancedSpellChecker());
+        EmailClient emailClient = new EmailClient();
+        emailClient.setSpellChecker(createAdvancedSpellChecker());
+        return emailClient;
     }
 }
