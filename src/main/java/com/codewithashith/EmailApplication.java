@@ -12,5 +12,11 @@ public class EmailApplication {
         EmailClient emailClient = applicationContext.getBean("emailClient", EmailClient.class);
 
         emailClient.sendEmail("Hey, " + "This is my first email message.");
+
+        AdvancedSpellChecker advancedSpellCheckerOne = applicationContext.getBean("advancedSpellChecker", AdvancedSpellChecker.class);
+        System.out.println(advancedSpellCheckerOne);
+        AdvancedSpellChecker advancedSpellCheckerTwo = applicationContext.getBean("advancedSpellChecker", AdvancedSpellChecker.class);
+        System.out.println(advancedSpellCheckerTwo);
+
     }
 }
