@@ -12,6 +12,5 @@ class EmailClient {
 
     void sendEmail(String emailMessage) {
         spellChecker.checkSpelling(emailMessage);
-        //send email
     }
 }
